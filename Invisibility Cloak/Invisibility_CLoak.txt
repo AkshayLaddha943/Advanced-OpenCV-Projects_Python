@@ -1,0 +1,13 @@
+1. Capture and store the background frame
+
+2. Color Detection (Red, Green or Blue, According to your suitability)
+    - RGB values are highly sensitive to illumination
+    - The right approach is to transform the color space of our image from RGB to HSV
+    - HSV: 
+       .Hue - Encodes color info. Color angle, where 0 degree corresponds to red color, 120         degrees corresponds to green color, 240 degrees corresponds to blue color.
+       .Saturation - Encodes the intensity of color.
+       .Value - Brightness of color
+
+3. Segmenting out the detected color cloth
+
+4. Generating a final augmented output to create magical effect
