@@ -1,0 +1,51 @@
+WindowManager:
+   MyGrid:
+   SecondWindow:
+   
+<MyGrid>
+   name: "first"
+      
+   Label:
+      text: "Instructions :\n 1. Pronounce three digit number (like 142) as : One four two (for clarity)\n 2. Number 20 gives an error\n 3. After pressing the mic, wait for one second & then start speaking"
+      size: root.width - 150, root.height - 150
+      pos_hint: {'center_x': .5, 'center_y': .5}
+      
+      
+      Button:
+         text: "Next"
+         pos_hint: {'center_x': .6, 'center_y': .4}
+         on_release: 
+            app.root.current= "second"
+      
+<SecondWindow>:
+   name: "second"
+   
+   GridLayout:
+      cols:1
+      
+      GridLayout:
+         cols:2
+         
+         Label:
+            text: "Enter the calculation: "
+            
+         TextInput:
+            id: choice
+            multiline: False
+            
+               
+         Button:
+            text: "Speak"
+            on_press: 
+               root.microphone()
+            size_hint: 0.1, 0.1
+         
+         Button:
+            text: "Result"
+            on_release: 
+               choice.text = root.result()
+         
+        
+         
+         
+         

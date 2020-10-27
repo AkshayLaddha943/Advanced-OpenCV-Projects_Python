@@ -1,0 +1,203 @@
+WindowManager:
+   MyGrid:
+   SecondWindow:
+   
+<MyGrid>
+   name: "first"
+   
+   GridLayout:
+      cols:4 
+      Label:
+         text:" Colour"
+      Label:
+         text:" Digit"
+      Label:
+         text:" Multiplier"
+      Label:
+         text:"Tolerance"
+      Label:
+         text:" Black"
+      TextInput:
+         text: "0"
+         id: choice2
+      TextInput:
+         text: "1"
+      TextInput:
+         text: ""
+      Label:
+         text:" Brown"
+      TextInput:
+         text: "1"
+         id: choice3
+      TextInput:
+         text: "10"
+      TextInput:
+         text: "±1%"
+      Label:
+         text:" Red"
+      TextInput:
+         text: "1"
+         id: choice4
+      TextInput:
+         text: "10"
+      TextInput:
+         text: "±2%"
+      Label:
+         text:"Orange"
+      TextInput:
+         text: "3"
+         id: choice5
+      TextInput:
+         text: "1,000"
+      TextInput:
+         text: ""
+      Label:
+         text:"Yellow"
+      TextInput:
+         text: "4"
+         id: choice6
+      TextInput:
+         text: "10,000"
+      TextInput:
+         text: ""
+      Label:
+         text:"Green"
+      TextInput:
+         text: "5"
+         id: choice7
+      TextInput:
+         text: "100,000"
+      TextInput:
+         text: "±0.5%"
+      Label:
+         text:"Blue"
+      TextInput:
+         text: "6"
+         id: choice8
+      TextInput:
+         text: "1,000,000"
+      TextInput:
+         text: "±0.25%"
+      Label:
+         text:"Violet"
+      TextInput:
+         text: "7"
+         id: choice9
+      TextInput:
+         text: "10,000,000"
+      TextInput:
+         text: "±0.1%" 
+      Label:
+         text:"Grey"
+      TextInput:
+         text: "8"
+         id: choice10
+      TextInput:
+         text: ""
+      TextInput:
+         text: "±0.005%"
+      Label:
+         text:"White"
+      TextInput:
+         text: "9"
+         id: choice11
+      TextInput:
+         text: ""
+      TextInput:
+         text: ""
+      Label:
+         text:"Gold"
+      TextInput:
+         text: "0"
+         id: choice12
+      TextInput:
+         text: "0.1"
+      TextInput:
+         text: "±5%"
+      Label:
+         text:"Silver"
+      TextInput:
+         text: "0"
+         id: choice13
+      TextInput:
+         text: "0.01"
+      TextInput:
+         text: "±10%"
+      Label:
+         text:"Silver"
+      TextInput:
+         text: "0"
+         id: choice14
+      TextInput:
+         text: "0.01"
+      TextInput:
+         text: "±10%"
+         
+         
+         
+      
+      
+      Button:
+         text: "Next"
+         pos_hint: {'center_x': .4, 'center_y': .6}
+         on_release: 
+            app.root.current= "second"
+      
+<SecondWindow>:
+   name: "second"
+   
+   GridLayout:
+      cols:1
+      
+      GridLayout:
+         cols:2
+         
+         Label:
+            text: "Enter Color 1: "
+            
+         TextInput:
+            id: choice
+            multiline: False
+         Label:
+            text: "Enter Color 2: "
+            
+         TextInput:
+            id: choice
+            multiline: False
+         Label:
+            text: "Enter Color 3: "
+            
+         TextInput:
+            id: choice
+            multiline: False 
+         Label:
+            text: "Enter Color 4: "
+            
+         TextInput:
+            id: choice
+            multiline: False
+            
+         Label:
+            text: "Resistor Value: "
+            
+         TextInput:
+            id: choice
+            multiline: False            
+         
+         
+         Button:
+            text: "Result"
+            on_release: 
+               app.root.current= "third"
+               
+         Button:
+            text: "Home Page"
+            on_release: 
+               app.root.current= "first"
+               
+
+           
+         
+         
+         
+         

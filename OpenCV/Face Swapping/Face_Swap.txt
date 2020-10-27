@@ -1,0 +1,9 @@
+1) Consider 2 images
+
+2) FInd Landmark points on both the images - 
+      I. Using "DLIB" library, detect facial landmark points 
+
+3) Delaunay Triangulation - 
+     Segmenting the face into triangles
+
+4) Seamless Cloning
