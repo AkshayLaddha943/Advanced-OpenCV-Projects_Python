@@ -1,0 +1,16 @@
+1. A blob is a group of connected pixels in an image that shares some common property.
+
+2. The centroid of a shape is the arithmetic mean of all the points in a shape.
+
+3. We can find center of blob usi	ng moments. 
+
+4. Image moments is a particular weighted average of image pixels intensities to find
+     properties  like radius, area, centroid,etc.
+
+5. Cx (x-coordinate of the Centroid) = M10/M00
+     Cy (y-coordinate of Centroid) = M01/M00
+     M = Moment
+
+I. Convert Image to Grayscale
+II. Perform Binarization on the image
+III. Find the center of the image after calculating moments1  
